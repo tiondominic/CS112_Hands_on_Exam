@@ -2,11 +2,12 @@ numbertoConvert = eval(input("Number to convert: "))
 conversion = eval(input("Would you like to convert " + str(numbertoConvert) + " to 1(binary), 2(octal), 3(hexadecimal): "))
 
 if conversion == 1:
-    print(bin(numbertoConvert).replace("0b", ""))
+    print(format(numbertoConvert, "b"))
 elif conversion == 2:
-    print(oct(numbertoConvert).replace("0o", ""))
+    print(format(numbertoConvert, "o"))
 elif conversion == 3:
-    print(hex(numbertoConvert))
+    print(format(numbertoConvert, "x"))
 else:
     print("invalid input")
+
 
